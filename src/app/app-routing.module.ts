@@ -4,8 +4,9 @@ import { AddRetailerComponent } from './add-retailer/add-retailer.component';
 import { ActionRetailerComponent } from './action-retailer/action-retailer.component';
 
 
+
 const routes: Routes = [
-  {path:"",redirectTo:"register",pathMatch:"full"},
+  
   {path:"register",component:AddRetailerComponent},
   {path:"search",component:ActionRetailerComponent}
 ];
@@ -15,3 +16,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingcomponent =[ AddRetailerComponent,ActionRetailerComponent]
+

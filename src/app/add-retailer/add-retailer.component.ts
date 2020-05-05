@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Retailer } from 'src/Retailer';
+
 import { RetailerRegistrationService } from '../retailer-registration.service';
+import { Retailer } from '../retailer';
 
 @Component({
   selector: 'app-add-retailer',
@@ -10,7 +11,7 @@ import { RetailerRegistrationService } from '../retailer-registration.service';
 export class AddRetailerComponent implements OnInit {
 
 
-  retailer: Retailer = new Retailer("","","","","","","");
+  retailer: Retailer = new Retailer();
   message: any;
 
   constructor(private service:RetailerRegistrationService) { }

@@ -9,12 +9,15 @@ import { RetailerRegistrationService} from './retailer-registration.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { UpdateRetailerComponent } from './update-retailer/update-retailer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ActionRetailerComponent,
-    AddRetailerComponent
+    AddRetailerComponent,
+    UpdateRetailerComponent
   ],
   imports: [
     BrowserModule,

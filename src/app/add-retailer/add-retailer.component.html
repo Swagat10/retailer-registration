@@ -16,48 +16,47 @@
 
                     <div class="form-group">
                         <label for="RetailerName"><span class="req">* </span> Retailer Name: </label>
-                        <input required type="text" [(ngModel)]="user.retailerName" name="retailerName" id="txt"
-                            class="form-control phone" maxlength="28" placeholder="Enter your fullname..." />
+                        <input required type="text" [(ngModel)]="retailer.retailer_Name" name="retailerName" id="txt"
+                            class="form-control" maxlength="28" placeholder="Enter your fullname..." />
                     </div>
 
                     <div class="form-group">
                         <label for="RetailerId"><span class="req">* </span> Retailer Id: </label>
-                        <input class="form-control" type="text" [(ngModel)]="user.retailerId" name="retailerId" id="txt" required
+                        <input class="form-control" type="text" [(ngModel)]="retailer.retailer_Id" name="retailerId" id="txt"
                             placeholder="Enter valid Id" />
                     </div>
 
-
                     <div class="form-group">
                         <label for="BuildingNo"><span class="req">* </span> BuildingNo : </label>
-                        <input class="form-control" type="text" [(ngModel)]="user.buildingNo" name="buildingNo" id="txt"
+                        <input class="form-control" type="text" [(ngModel)]="retailer.buildingNo" name="buildingNo" id="txt"
                             placeholder="BuildingNo"  />
                     </div>
 
 
                     <div class="form-group">
                         <label for="City"><span class="req">* </span> City : </label>
-                        <input class="form-control" type="text" [(ngModel)]="user.city" name="city" id="txt"
+                        <input class="form-control" type="text" [(ngModel)]="retailer.city" name="city" id="txt"
                             placeholder="City" />
 
                     </div>
 
                     <div class="form-group">
                         <label for="State"><span class="req">* </span> State : </label>
-                        <input class="form-control" type="text" [(ngModel)]="user.state" name="state" id="txt"
+                        <input class="form-control" type="text" [(ngModel)]="retailer.state" name="state" id="txt"
                             placeholder="State"/>
 
                     </div>
 
                     <div class="form-group">
                         <label for="Field"><span class="req">* </span> Field : </label>
-                        <input class="form-control" type="text" [(ngModel)]="user.field" name="field" id="txt"
+                        <input class="form-control" type="text" [(ngModel)]="retailer.field" name="field" id="txt"
                             placeholder="Field"/>
 
                     </div>
 
                     <div class="form-group">
                         <label for="Zip"><span class="req">* </span> Zip : </label>
-                        <input class="form-control" type="text" [(ngModel)]="user.zip" name="zip" id="txt"
+                        <input class="form-control" type="text" [(ngModel)]="retailer.zip" name="zip" id="txt"
                             placeholder="Zip" />
                     </div>
 

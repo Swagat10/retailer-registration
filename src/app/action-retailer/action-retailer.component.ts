@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RetailerRegistrationService } from '../retailer-registration.service';
 
 @Component({
   selector: 'app-action-retailer',
@@ -7,9 +8,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActionRetailerComponent implements OnInit {
 
-  constructor() { }
-
+  retailers : any;
+  retailer_Id: string;
+  
+  constructor(private service:RetailerRegistrationService) { }
   ngOnInit(): void {
+    //let resp=this.service.getRetailers();
+    //resp.subscribe((data)=>this.retailers=data);
+
+    this.service.getRetailers().subscribe(data =>{this.retailers=data;})
+
   }
+
+
+  public removeRetailer(retailer_Id:string){
+   // let resp= this.service.removeRetailers(retailer_Id);
+    //resp.subscribe((data)=>this.retailers=data);
+    this.service.removeRetailers(retailer_Id).subscribe(data=>{
+      console.log(data);
+      this.service.getRetailers().subscribe(data=>{
+        this.retailers=data;
+      })
+    },
+    error=>console.log(error));
+   }
+
+   public update(index:string)
+   {
+     this.service.setRetailer(this.retailers[index]);
+   }
+   
+   public findRetailersById(){
+     let resp= this.service.findRetailers(this.retailer_Id);
+     resp.subscribe((data)=>this.retailers=data);
+    }
 
 }
