@@ -7,7 +7,7 @@
     <div class="row">
                <div id="custom-search-input">
                                 <div class="input-group col-md-12" style="text-align: center">
-                                    <input type="text" class="search-query form-control" placeholder="Search With Retailer id"  name="retailer_Id" [(ngModel)]="retailer_Id"/>
+                                    <input type="text" class="" placeholder="Search With Retailer id"  name="retailer_Id" [(ngModel)]="retailer_Id"/>
                                     <span class="input-group-btn">
                                         <button class="btn btn-danger" type="button" (click)="findRetailersById()">
                                             <span class=" glyphicon glyphicon-search"></span>
@@ -46,7 +46,7 @@
 
             <td class="text-center">
                 <button class="btn btn-danger btn-xs" (click)="removeRetailer(retailer.retailer_Id)"><span class="glyphicon glyphicon"></span> Delete</button>
-                <a class="btn btn-danger btn-xs" (click)="update(i)" routerLink="/updateRetailer"><span class="glyphicon glyphicon"></span>Update</a>
+                <a class="btn btn-danger btn-xs" (click)="update(i)" routerLink="/update"><span class="glyphicon glyphicon"></span>Update</a>
             </td>
         
         </tr>

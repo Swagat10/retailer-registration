@@ -27,8 +27,8 @@ export class RetailerRegistrationService {
     return this.http.delete("http://localhost:1998/retailer/delete/"+retailer_Id);
   }
 
-  public updateRetailers(retailer_Id):Observable<any>{
-    return this.http.get("http://localhost:1998/question/update/");
+  public updateRetailers(value:any):Observable<Object>{
+    return this.http.put("http://localhost:1998/retailer/update",value);
   }
    setRetailer(retailer:Retailer)
    {
