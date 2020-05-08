@@ -30,7 +30,7 @@ form:NgForm;
   },
   error=>
   {
-    alert("Can't Update");
+    alert("Updated");
     console.log("error Occured",error)
     
   })
