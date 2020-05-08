@@ -13,17 +13,12 @@ export class ActionRetailerComponent implements OnInit {
   
   constructor(private service:RetailerRegistrationService) { }
   ngOnInit(): void {
-    //let resp=this.service.getRetailers();
-    //resp.subscribe((data)=>this.retailers=data);
-
     this.service.getRetailers().subscribe(data =>{this.retailers=data;})
 
   }
 
 
   public removeRetailer(retailer_Id:string){
-   // let resp= this.service.removeRetailers(retailer_Id);
-    //resp.subscribe((data)=>this.retailers=data);
     this.service.removeRetailers(retailer_Id).subscribe(data=>{
       console.log(data);
       this.service.getRetailers().subscribe(data=>{

@@ -1,3 +1,6 @@
+/*This is component is for performing the addition of retailer functuion */
+
+
 import { Component, OnInit } from '@angular/core';
 
 import { RetailerRegistrationService } from '../retailer-registration.service';

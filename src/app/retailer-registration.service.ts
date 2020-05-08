@@ -1,3 +1,5 @@
+/*it is mapped to the backend controllers class by the help of RESTFull api */
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';

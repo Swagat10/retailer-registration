@@ -1,8 +1,10 @@
+/*This is component is for performing the updation of retailer functuion */
+/*This component is redirected from action-retailer component. */
+
 import { Component, OnInit,ViewChild} from '@angular/core';
 import { RetailerRegistrationService } from '../retailer-registration.service';
 import { NgForm } from '@angular/forms';
 import { Retailer } from '../retailer';
-
 
 
 @Component({
@@ -14,6 +16,7 @@ export class UpdateRetailerComponent implements OnInit {
 @ViewChild("formdata")
 form:NgForm;
 
+/*This file takes data from its html and suscribes to the service */
   constructor(private service:RetailerRegistrationService) { }
 
   retailer : Retailer = new Retailer();
@@ -30,7 +33,7 @@ form:NgForm;
     alert("Can't Update");
     console.log("error Occured",error)
     
-  }  )
+  })
 
 }
 
